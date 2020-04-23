@@ -26,7 +26,7 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
             '''
 
 stuff = ET.fromstring(xmldata)
-print('Oerder id  :', stuff.get('orderid'))
+print('Order id  :', stuff.get('orderid'))
 print('order person : ', stuff.find('orderperson').text)
 print()
 #shipto = stuff.find('shipto')
@@ -39,12 +39,11 @@ print()
 
 print('List of items...')
 items = stuff.findall('item')
-print("Number of Ordered items:", len(items),'\n')
-
+print("Number of Ordered items:", len(items))
 
 itemnum = 1
 for item in items:
-      
+  print()    
   print('Item number', itemnum)
   if item.find('title') != None :
     print("Title:", item.find('title').text)
@@ -56,5 +55,5 @@ for item in items:
     print("Price:", item.find('price').text)
 
   itemnum = itemnum + 1
-  print()
+  
 
