@@ -25,7 +25,12 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
 </shiporder>
             '''
 
-stuff = ET.fromstring(xmldata)
+#to avoid traceback error
+try:
+  stuff = ET.fromstring(xmldata)
+except:
+  print("The XML data is not correct")
+  quit()
 print('Order id  :', stuff.get('orderid'))
 print('order person : ', stuff.find('orderperson').text)
 print()
