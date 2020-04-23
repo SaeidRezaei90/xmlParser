@@ -25,4 +25,6 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
 </shiporder>
 
 ## Result
-
+ <div style="float:center">
+ <img  src="result.PNG" width=500>
+  </div>
