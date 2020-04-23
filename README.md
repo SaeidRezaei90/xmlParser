@@ -1,6 +1,7 @@
 # xmlParser
 This is a very simple code which parse an xml document and extract the values. xml.etree module is used to parse the xml document.
 ## XML document:
+```xml
 <shiporder orderid="889923"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="shiporder.xsd">
@@ -23,6 +24,7 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
     <price>9.90</price>
   </item>
 </shiporder>
+```
 
 ## Result
  <div style="float:center">
